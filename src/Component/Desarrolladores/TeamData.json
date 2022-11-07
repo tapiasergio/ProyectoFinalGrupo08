@@ -1,0 +1,62 @@
+[
+    {
+        "imagen": "img/atilio.png",
+        "apellido": "Altamirano",
+        "nombre": "Atilio",
+        "LU": 448,
+        "GitHub": "https://github.com/xAtilio00",
+        "descripcion": "Tecnico Minero - Programador",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 21
+    },
+    {
+        "imagen": "img/fabian.png",
+        "apellido": "Ontiveros",
+        "nombre": "Fabian",
+        "LU": 309,
+        "GitHub": "https://github.com/fabianGerman",
+        "descripcion": "Programador",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 25
+    },
+    {
+        "imagen": "img/esteban.png",
+        "apellido": "Espada",
+        "nombre": "Esteban",
+        "LU": 301,
+        "GitHub": "https://github.com/EstebanEspada",
+        "descripcion": "Aficionado a los Juegos - Deportista",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 22
+    },
+    {
+        "imagen": "img/sergio.png",
+        "apellido": "Tapia",
+        "nombre": "Sergio",
+        "LU": 460,
+        "GitHub": "https://github.com/tapiasergio",
+        "descripcion": "Ex Policia - Aficionado a la Música",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 28
+    },
+    {
+        "imagen": "img/nicolas.png",
+        "apellido": "Márquez",
+        "nombre": "Nicolás",
+        "LU": 129,
+        "GitHub": "https://github.com/chinese33",
+        "descripcion": "Diseñador Gráfico - Aficionado al Arte",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 32
+    },
+    {
+        "imagen": "img/miguel.png",
+        "apellido": "Zenteno",
+        "nombre": "Miguel",
+        "LU": 441,
+        "GitHub": "https://github.com/AlumnoMA",
+        "descripcion": "Ex Marino - Tecnico Ilustrador",
+        "descripcion2" : "Estudiante de diseño de videojuegos",
+        "edad": 45
+    }
+]

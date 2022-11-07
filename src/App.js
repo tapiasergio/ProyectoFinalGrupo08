@@ -1,24 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import Inicio from './Component/Inicio/Inicio'
+import Desarrolladores from './Component/Desarrolladores/Desarrolladores'
+import Error from './Component/error/Error'
+import Game from './Component/GameReact/Game'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          En Curso
-        </a>
-      </header>
-    </div>
+    <Container>
+    
+        <Router>
+          <NavBar/>
+          <Routes>
+            <Route path='/' element={<Inicio />}></Route>
+            <Route path='/rankin' element={<Rankin />}></Route>
+            <Route path='/desarrolladores' element={<Desarrolladores />}></Route>
+            <Route path='/game' element={<Game />}></Route>
+            <Route path='*' element={<Error/>}></Route>
+          </Routes>
+        </Router>
+          
+        
+    </Container>
   );
 }
 
