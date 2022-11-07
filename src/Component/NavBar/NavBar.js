@@ -17,10 +17,9 @@ function NavScrollExample() {
                         navbarScroll
                     >
                         <Nav.Link href="/">Inicio</Nav.Link>
-                        <Nav.Link href="/rankin">Rankin</Nav.Link>
                         <Nav.Link href="/desarrolladores">Desarrolladores</Nav.Link>
-                        <Nav.Link href="/game">GameReact</Nav.Link>
-                        <Nav.Link href="/game">GamePhaser</Nav.Link>
+                        <Nav.Link href="/gameReact">GameReact</Nav.Link>
+                        <Nav.Link href="/gamePhaser">GamePhaser</Nav.Link>
                         <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
