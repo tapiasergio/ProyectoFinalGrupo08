@@ -8,7 +8,7 @@ function NavScrollExample() {
     return (
         <Navbar style={{backgroundColor:'green'}} expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">JUEGO DEL AHORCADO</Navbar.Brand>
+                <Navbar.Brand href="#">GRUPO 08</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -18,8 +18,8 @@ function NavScrollExample() {
                     >
                         <Nav.Link href="/">Inicio</Nav.Link>
                         <Nav.Link href="/desarrolladores">Desarrolladores</Nav.Link>
-                        <Nav.Link href="/gameReact">GameReact</Nav.Link>
-                        <Nav.Link href="/gamePhaser">GamePhaser</Nav.Link>
+                        <Nav.Link href="/snake-game">Snake-Game</Nav.Link>
+                        <Nav.Link href="/cheems-game">GamePhaser</Nav.Link>
                         <NavDropdown title="Link" id="navbarScrollingDropdown">
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action4">
@@ -30,9 +30,6 @@ function NavScrollExample() {
                                 Something else here
                             </NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#" disabled>
-                            Link
-                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
