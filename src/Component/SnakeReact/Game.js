@@ -78,24 +78,27 @@ function Game(){
         const context = canvasRef.current.getContext("2d");
         context.setTransform(escala, 0, 0, escala, 0, 0);
         context.clearRect(0, 0, window.innerWidth, window.innerHeight);
-        context.fillStyle = "green";
+        context.fillStyle = "white";
         snake.forEach(([x, y]) => context.fillRect(x, y, 1, 1));
         context.fillStyle = "red";
         context.fillRect(manzana[0], manzana[1], 1, 1);
     }, [snake, manzana, gameOver]);
 
     return (
+        <div className="bg-secondary" >
         <div role="button" tabIndex="0" onKeyDown={e => moveSnake(e)} className="text-center">
-          <div className="text-center">Puntaje:
+          <div className="text-center, text-white">Puntaje:
             {" "+ puntaje}
-          </div> 
-          <canvas
-            style={{ border: "1px solid black" }}
+          </div>
+          <canvas 
+            style={{ 
+                backgroundImage: `url(${process.env.PUBLIC_URL + '/img/backgroundgame.jpg'})`, border: "3px solid black" 
+              }}
             ref={canvasRef}
             width={`${tamanioLienzo[0]}px`}
-            height={`${tamanioLienzo[1]}px`}
-          />
-          <div className="text-center">
+            height={`${tamanioLienzo[1]}px`}>
+            </canvas>
+          <div className="text-center, text-white">
             {gameOver && <strong>GAME OVER! 
                 <div>Su Puntaje Final:
                 {" " + puntaje}
@@ -103,6 +106,7 @@ function Game(){
             </strong>}
             <Button onClick={startGame} variant="success">Jugar</Button>
           </div>
+        </div>
         </div>
     );
 

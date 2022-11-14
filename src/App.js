@@ -10,7 +10,7 @@ import NavBar from './Component/NavBar/NavBar'
 
 function App() {
   return (
-    <Container>
+    <>
     
         <Router>
           <NavBar/>
@@ -23,7 +23,7 @@ function App() {
         </Router>
           
         
-    </Container>
+    </>
   );
 }
 
