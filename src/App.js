@@ -8,6 +8,7 @@ import NavBar from './Component/NavBar/NavBar'
 import CheemsGame from './Component/GamePhaser/Index'
 import Ahorcado from './Component/AhorcadoReact/Game'
 import Arkanoid from './Component/Arkanoid/index'
+import PPT from './Component/PPTGame/Game'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/snake-game' element={<SnakeReact/>}></Route>
             <Route path='/cheems-game' element={<CheemsGame/>}></Route>
             <Route path='/ahorcado' element={<Ahorcado/>}></Route>
+            <Route path='/ppt' element={<PPT/>}></Route>
             <Route path='/arkanoid' element={<Arkanoid/>}></Route>
             <Route path='*' element={<Error/>}></Route>
           </Routes>

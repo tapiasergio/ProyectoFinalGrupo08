@@ -31,6 +31,9 @@ function NavScrollExample() {
                         <Nav.Link href="/ahorcado">
                             <Button className="btn btn-secondary btn-sm">Ahorcado</Button>
                         </Nav.Link>
+                        <Nav.Link href="/ppt">
+                            <Button className="btn btn-secondary btn-sm">PPT</Button>
+                        </Nav.Link>
                         <Nav.Link href="/arkanoid">
                             <Button className="btn btn-secondary btn-sm">Arkanoid</Button>
                         </Nav.Link>

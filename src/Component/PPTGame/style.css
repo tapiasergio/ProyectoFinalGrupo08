@@ -1,0 +1,18 @@
+.estilo{
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.estilo2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#auxiliar{
+    padding-right: 15%;
+    margin: 10px;
+}
