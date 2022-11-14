@@ -3,6 +3,7 @@ import Phaser from "phaser";
 export class Phase1 extends Phase{
 
     create(){
+        
         this.phase1 = this.relatedScene.physics.add.image(400,300,'nivel1');
         this.paddle = this.relatedScene.physics.add.image(200,480,'paddle').setImmovable();
         this.paddle.body.allowGravity = false;

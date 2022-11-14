@@ -2,8 +2,10 @@ import { tamanioLienzo, snakeComienzo, manzanaComienzo, escala, velocidad, direc
 import { useInterval } from "./useInterval";
 import React, { useState, useRef, useEffect } from "react";
 import Button from "react-bootstrap/Button";
-
+import song from "./audioArkanoid.mp3";
+const audio = new Audio(song);
 function Game(){
+
     const canvasRef = useRef();
     const[snake, setSnake] = useState(snakeComienzo);
     const[manzana, setManzana] = useState(manzanaComienzo);
@@ -21,6 +23,7 @@ function Game(){
 
     function moveSnake({keyCode}){
         keyCode >= 37 && keyCode <= 40 && setDireccion(direcciones[keyCode]);
+        
     }
 
     const crearManzana = () =>
@@ -57,6 +60,7 @@ function Game(){
         const newSnakeCabeza = [copiaSnake[0][0] + direccion[0], copiaSnake[0][1] + direccion[1]];
         copiaSnake.unshift(newSnakeCabeza);
         if(colision(newSnakeCabeza)){
+            audio.load();
             endGame();
         }
         if(!comerManzana(copiaSnake)){
@@ -66,12 +70,16 @@ function Game(){
     }
 
     function startGame(){
+        
+    audio.play();
+        
         setSnake(snakeComienzo);
         setManzana(manzanaComienzo);
         setDireccion([0, -1]);
         setSpeed(velocidad);
         setGameOver(false);
         setPuntaje(0)
+        
     };
 
     useEffect(() => {
