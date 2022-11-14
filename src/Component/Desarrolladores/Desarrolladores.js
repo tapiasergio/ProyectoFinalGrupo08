@@ -18,7 +18,8 @@ function Desarrolladores(){
             </div>
             <div className='card-contenido'>
                 <div className='card-detalle'>
-                    <h2>{grupo.nombre} {grupo.apellido} <br></br><span>Desarrollador</span></h2>
+                    <h2>{grupo.nombre} {grupo.apellido} <br></br><span>Desarrollador Lu: {grupo.LU}</span>
+                    </h2>
                     <div className='card-datos'>
                         <h3>{grupo.descripcion}
                         <br></br>
