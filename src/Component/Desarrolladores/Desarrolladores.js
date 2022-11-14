@@ -5,7 +5,7 @@ import "./Style.css";
 function Desarrolladores(){
     return(
         <div style={{ 
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/background.jpg'})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + '/img/azul.jpg'})`,
           }}>
         <div className='card-diseñadores-bg,  text-center'>
        {Teams.map(grupo => {

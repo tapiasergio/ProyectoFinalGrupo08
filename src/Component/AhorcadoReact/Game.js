@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Imagen from "./Imagen";
 import Palabra from "./Palabra";
 import Control from "./Control";
-import Letters from "../../LettersData.json";
+import Letters from "./LettersData.json";
 import { Alert } from "react-bootstrap";
 
 class Game extends Component {

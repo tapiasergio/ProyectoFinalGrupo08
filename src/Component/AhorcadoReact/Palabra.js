@@ -8,7 +8,7 @@ class Palabra extends Component{
     
     render(){
         return(
-        <p id="palabra">{this.props.palabraAdivinada}</p> //se pasa por parametro a la palabra elegida
+        <p className="text-white" id="palabra">{this.props.palabraAdivinada}</p> //se pasa por parametro a la palabra elegida
         )
     };
 }
