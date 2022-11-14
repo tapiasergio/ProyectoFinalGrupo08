@@ -1,20 +1,15 @@
 import React from "react";
+import "./StyleInicio.css";
+import image from "./BIENVENIDOS.jpg"
+import sonido from "./audio_file.mp3"
 
 function Inicio() {
+  
+  new Audio(sonido).play();
   return (
-    <>
-      <div className = "text-center">
-        
+      <div className="div-Inicio">
+        <img className="Imagen-Inicio" src={image} alt='error'></img>
       </div>
-      <br></br>
-      <div className="text-center, text-white">
-        <h1>BIENVENIDOS AL GRUPO 08</h1>
-        <br></br><br></br>
-
-        <br></br>
-      </div>
-       
-    </>
     );
 }
 
