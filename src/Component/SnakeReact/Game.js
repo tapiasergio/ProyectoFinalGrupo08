@@ -14,7 +14,7 @@ function Game(){
 
     useInterval(() => gameLoop(), speed);
 
-    function endGame(){
+    function endGame(){ //Funcion que indica cuando finaliza el juego
         setSpeed(null);
         setGameOver(true);
     };
