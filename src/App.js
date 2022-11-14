@@ -1,29 +1,31 @@
 <<<<<<< Updated upstream
 import logo from './logo.svg';
-=======
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
->>>>>>> Stashed changes
 import './App.css';
+import Inicio from './Component/Inicio/Inicio'
+import Desarrolladores from './Component/Desarrolladores/Desarrolladores'
+import Error from './Component/error/Error'
+import SnakeReact from './Component/SnakeReact/Game.js'
+import NavBar from './Component/NavBar/NavBar'
+//import CheemsGame from './Component/Game/index'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          En Curso
-        </a>
-      </header>
-    </div>
+    <Container>
+    
+        <Router>
+          <NavBar/>
+          <Routes>
+            <Route path='/' element={<Inicio />}></Route>
+            <Route path='/desarrolladores' element={<Desarrolladores />}></Route>
+            <Route path='/snake-game' element={<SnakeReact/>}></Route>
+            <Route path='*' element={<Error/>}></Route>
+          </Routes>
+        </Router>
+          
+        
+    </Container>
   );
 }
 
