@@ -1,6 +1,5 @@
 import { RestartButton } from "../Component/ButtonRePlay";
-
-RestartButton
+import Phaser from "phaser";
 
 export class Congratulations extends Phaser.Scene {
   constructor() {
