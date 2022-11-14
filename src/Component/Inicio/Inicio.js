@@ -10,14 +10,10 @@ function Inicio() {
         
       </div>
       <br></br>
-      <div className="text-center">
-        <Button variant='secondary' onClick={() => navigate("/game")}>
-          Jugar
-        </Button>
+      <div className="text-center, text-white">
+        <h1>BIENVENIDOS AL GRUPO 08</h1>
         <br></br><br></br>
-        <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
-          Desarrolladores
-        </Button>
+
         <br></br>
       </div>
        
