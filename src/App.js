@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
 import './App.css';
 import Inicio from './Component/Inicio/Inicio'
 import Desarrolladores from './Component/Desarrolladores/Desarrolladores'
