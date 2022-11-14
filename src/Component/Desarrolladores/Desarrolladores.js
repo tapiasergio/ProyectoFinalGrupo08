@@ -22,8 +22,12 @@ function Desarrolladores(){
                     <div className='card-datos'>
                         <h3>{grupo.descripcion}
                         <br></br>
+                        {grupo.descripcion2}
                         <span>
-                        <a href={grupo.GitHub}>GitHub </a>
+                        <br></br>
+                        
+                        <br></br>
+                        <a href={grupo.GitHub}>Ir al Git Hub</a>
                         </span>
                         </h3>
                     </div>

@@ -320,12 +320,14 @@
     align-items: flex-end;
     overflow: hidden;
   }
+  /* Para Modificar la posicion de los detalles del Card*/
+  /* Transicion es para el tiempo que tarda en expandirse*/
   .card-grupo .card-contenido .card-detalle{
-    padding: 30px;
+    padding: 45px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
-    transform: translateY(130px);
+    transform: translateY(175px);
   }
   .card-grupo:hover .card-contenido .card-detalle{
   
@@ -342,11 +344,16 @@
     font-weight: 500;
     color: #fff;
   }
+  .card-grupo .card-contenido .card-detalle h3{
+    font-size: 1.2em;
+    font-weight: 350;
+    color: #fff;
+  }
   .card-grupo .card-contenido .card-detalle .card-datos{
     display: flex;
     justify-content: center;
-    color: #fff;
-    margin: 5px 0;
+    color: rgb(0, 120, 200);
+    margin: 15px 0;
     transform: translateY(10px);
   }
   /* Animaciones */
