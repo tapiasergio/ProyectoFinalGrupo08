@@ -33,7 +33,7 @@ export class PhaseConstructor{
     /**cambio de nivel */
     nextLevel(){
          this.currentPhase.deleteFixedZombies(); //BORRA LOS ENEMIGOS DEL LA ESCENA
-        if(this.phases.length == 0){//CUANDO EL TAMAÑO DEL ARRAY SEA IGUAL A 0 SE LLAMA AL METODO ENDGAME PARA FINALIZAR EL JUEGO
+        if(this.phases.length === 0){//CUANDO EL TAMAÑO DEL ARRAY SEA IGUAL A 0 SE LLAMA AL METODO ENDGAME PARA FINALIZAR EL JUEGO
             this.relatedScene.endGame(true);
         }else{
             return this.create();//SI EL TAMAÑO DE LA ESCENA ES DISTINTO A 0 LLAMA AL METODO CREATE DE LA SIGUIENTE ESCENA

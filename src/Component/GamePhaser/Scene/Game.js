@@ -78,10 +78,10 @@ export class Game extends Phaser.Scene {
     cofreImpact(cheem, cofre) {
         cofre.disableBody(true, true);//CUANDO COLISIONA EL COFRE DESAPARECE
         let pase = true;
-        if (this.PhaseConstructor.phases == 0) {//SI EL TAMAÑO DEL ARREGLO ES IGUAL A 0 SIGNIFICA QUE LLEGO HASTA EL FINAL
+        if (this.PhaseConstructor.phases === 0) {//SI EL TAMAÑO DEL ARREGLO ES IGUAL A 0 SIGNIFICA QUE LLEGO HASTA EL FINAL
             this.scene.start("congratulations");//INICIA LA ESCENA DE CONGRATULATIONS
         } else {
-            if (pase == true) {
+            if (pase === true) {
                 pase = false;
                 this.PhaseConstructor.nextLevel();//CAMBIA AL SIGUIENTE NIVEL
             }
