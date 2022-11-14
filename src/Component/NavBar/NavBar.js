@@ -3,12 +3,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
 function NavScrollExample() {
     return (
-        <Navbar style={{backgroundColor:'green'}} expand="lg">
+        <Navbar style={{backgroundColor:'red-dark'}} expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">GRUPO 08</Navbar.Brand>
+                <Navbar.Brand href="#" className='text-white'>GRUPO 08</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -16,20 +17,18 @@ function NavScrollExample() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/">Inicio</Nav.Link>
-                        <Nav.Link href="/desarrolladores">Desarrolladores</Nav.Link>
-                        <Nav.Link href="/snake-game">Snake-Game</Nav.Link>
-                        <Nav.Link href="/cheems-game">GamePhaser</Nav.Link>
-                        <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                                Something else here
-                            </NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="/">
+                            <Button className="btn btn-secondary btn-sm">Inicio</Button>
+                        </Nav.Link>
+                        <Nav.Link href="/desarrolladores">
+                            <Button className="btn btn-secondary btn-sm">Desarrolladores</Button>
+                        </Nav.Link>
+                        <Nav.Link href="/snake-game">
+                            <Button className="btn btn-secondary btn-sm">Snake-Game</Button>
+                        </Nav.Link>
+                        <Nav.Link href="/cheems-game">
+                            <Button className="btn btn-secondary btn-sm">Cheems-Game</Button>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

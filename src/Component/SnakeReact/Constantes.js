@@ -1,5 +1,5 @@
 //En este archivo js se van a definir constantes
-const tamanioLienzo = [480, 480];
+const tamanioLienzo = [800, 480];
 const manzanaComienzo = [12, 10]; //Ubicación de la primera manzana dentro del juego
 const snakeComienzo = [
     [12, 20]
