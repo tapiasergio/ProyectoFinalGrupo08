@@ -20,11 +20,11 @@ function Game(){
     };
 
     function moveSnake({keyCode}){
-        keyCode >= 37 && keyCode <= 40 && setDireccion(direcciones[keyCode]);
+        keyCode >= 37 && keyCode <= 40 && setDireccion(direcciones[keyCode]); //Permite mover al Snake con las teclas designadas
     }
 
     const crearManzana = () =>
-        manzana.map((_a, i) => Math.floor(Math.random()* (tamanioLienzo[i]/escala)));
+        manzana.map((_a, i) => Math.floor(Math.random()* (tamanioLienzo[i]/escala))); //Genera una manzana en una posición al azar cada vez que es comida
     
 
     const colision = (pieza, snk = snake) => {
@@ -45,7 +45,7 @@ function Game(){
                 newManzana = crearManzana();
                 setPuntaje(newPuntaje);
             }
-            setPuntaje(newPuntaje)
+            setPuntaje(newPuntaje);
             setManzana(newManzana);
             return true;
         }
