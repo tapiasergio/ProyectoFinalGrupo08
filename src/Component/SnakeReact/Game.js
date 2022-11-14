@@ -16,7 +16,7 @@ function Game(){
 
     function endGame(){ //Funcion que indica cuando finaliza el juego
         setSpeed(null);
-        setGameOver(true);
+        setGameOver(true); //Se cambia el estado a true
     };
 
     function moveSnake({keyCode}){
