@@ -42,14 +42,14 @@ function Game(){
 
     const comerManzana = newSnake => {
         if(newSnake[0][0] === manzana[0] && newSnake[0][1] === manzana[1]){
-            let newManzana = crearManzana();
-            let newPuntaje = puntaje + 1;
+            let newManzana = crearManzana(); //Cuando la manzana sea comida, se creará otra en otro lugar
+            let newPuntaje = puntaje + 1; //Suma el puntaje del jugador en +1
             while(colision(newManzana, newSnake)){
                 newManzana = crearManzana();
                 setPuntaje(newPuntaje);
             }
             setPuntaje(newPuntaje)
-            setManzana(newManzana);
+            setManzana(newManzana); //El estado de la manzana tomará las nuevas propiedades de la nueva manzana
             return true;
         }
         return false;
