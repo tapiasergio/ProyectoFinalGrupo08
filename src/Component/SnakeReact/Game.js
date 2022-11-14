@@ -40,11 +40,11 @@ function Game(){
     const comerManzana = newSnake => {
         if(newSnake[0][0] === manzana[0] && newSnake[0][1] === manzana[1]){
             let newManzana = crearManzana();
+            let newPuntaje = puntaje + 1;
             while(colision(newManzana, newSnake)){
                 newManzana = crearManzana();
                 setPuntaje(newPuntaje);
             }
-            let newPuntaje = puntaje + 1;
             setPuntaje(newPuntaje)
             setManzana(newManzana);
             return true;
