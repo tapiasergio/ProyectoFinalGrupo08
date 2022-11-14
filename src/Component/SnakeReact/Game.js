@@ -48,7 +48,7 @@ function Game(){
                 newManzana = crearManzana();
                 setPuntaje(newPuntaje);
             }
-            setPuntaje(newPuntaje)
+            setPuntaje(newPuntaje) //El estado del puntaje se cambiará al actual
             setManzana(newManzana); //El estado de la manzana tomará las nuevas propiedades de la nueva manzana
             return true;
         }
