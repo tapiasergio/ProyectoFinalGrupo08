@@ -1,5 +1,5 @@
 import { Phase } from './Phase.js'
-//import { zombieList1 } from './objetosn2/Enemigos2.js';
+import { zombieList1 } from './objetosn2/Enemigos2.js';
 import { zombie2List1 } from './objetosn2/Enemigos2.js';
 import { plataformaList1 } from './objetosn2/Plataformas2.js';
 export class Phase2 extends Phase{
