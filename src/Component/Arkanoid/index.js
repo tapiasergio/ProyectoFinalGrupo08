@@ -5,8 +5,10 @@ import { Start } from "./Scene/start";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
+
 export default function Juego() {
     const [start, setStart] = useState(false);
+    
     useEffect(() => {
         const config = {
             type: Phaser.AUTO,
@@ -24,12 +26,15 @@ export default function Juego() {
         }
 
         var game = new Phaser.Game(config);
+        
         return () => {
             setStart(false);
             game.destroy(true);
+            
         }
     }, [start]);
     return (
         <div id='game' className='text-center'></div>
+        
     );
 }

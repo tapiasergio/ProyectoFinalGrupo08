@@ -1,8 +1,10 @@
 import React from "react";
 import Teams from "../Desarrolladores/TeamData.json";
 import "./Style.css";
+import sonido from "./audioD.mp3"
 
 function Desarrolladores(){
+    new Audio(sonido).play();
     return(
         <div style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/img/azul.jpg'})`,
