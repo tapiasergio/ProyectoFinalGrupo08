@@ -1,9 +1,6 @@
 import React from "react";
-import Button from 'react-bootstrap/Button';
-import { useNavigate } from "react-router-dom";
 
 function Inicio() {
-  const navigate = useNavigate();
   return (
     <>
       <div className = "text-center">

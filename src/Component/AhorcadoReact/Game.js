@@ -3,7 +3,6 @@ import Imagen from "./Imagen";
 import Palabra from "./Palabra";
 import Control from "./Control";
 import Letters from "./LettersData.json";
-import { Alert } from "react-bootstrap";
 
 class Game extends Component {
     constructor(props) {
@@ -75,12 +74,12 @@ class Game extends Component {
     }
 
     componentDidUpdate(){
-        if(this.state.numAciertos == this.state.palabraAdivinar.length){
+        if(this.state.numAciertos === this.state.palabraAdivinar.length){
           
           alert("GANASTE")
           this.reiniciar();
         } 
-        if(this.state.numFallos == 7){
+        if(this.state.numFallos === 7){
           alert("PERDISTE")
           this.reiniciar();
         }
