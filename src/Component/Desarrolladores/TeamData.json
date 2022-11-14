@@ -25,7 +25,7 @@
         "nombre": "Esteban",
         "LU": 301,
         "GitHub": "https://github.com/EstebanEspada",
-        "descripcion": "Aficionado a los Juegos - Deportista",
+        "descripcion": "Deportista",
         "descripcion2" : "Estudiante de diseño de videojuegos",
         "edad": 22
     },
@@ -45,7 +45,7 @@
         "nombre": "Nicolás",
         "LU": 129,
         "GitHub": "https://github.com/chinese33",
-        "descripcion": "Diseñador Gráfico - Aficionado al Arte",
+        "descripcion": "Diseñador Gráfico - Artista ",
         "descripcion2" : "Estudiante de diseño de videojuegos",
         "edad": 32
     },
