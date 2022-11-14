@@ -29,6 +29,9 @@ function NavScrollExample() {
                         <Nav.Link href="/cheems-game">
                             <Button className="btn btn-secondary btn-sm">Cheems-Game</Button>
                         </Nav.Link>
+                        <Nav.Link href="/ahorcado">
+                            <Button className="btn btn-secondary btn-sm">Ahorcado</Button>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
